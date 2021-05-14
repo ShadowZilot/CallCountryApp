@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Call Country</string>
+    <string name="explore_bottom_label">Explore</string>
+    <string name="learning_bottom_label">Learning</string>
+    <string name="search_action">search</string>
+    <array name="world_parts">
+        <item>Europe</item> <!--0-->
+        <item>Asia</item> <!--1-->
+        <item>Africa</item> <!--2-->
+        <item>Oceania</item> <!--3-->
+        <item>North America</item> <!--4-->
+        <item>South America</item> <!--5-->
+    </array>
+    <array name="world_parts_game">
+        <item>SOUTH A</item>
+        <item>EUROPE</item>
+        <item>ASIA</item>
+        <item>AFRICA</item>
+        <item>OCEANIA</item>
+        <item>NORTH A</item>
+    </array>
+    <string name="wiki_additional_info">For additional information go to</string>
+    <string name="wiki_web_pattern">https://en.wikipedia.org/wiki/</string>
+    <string name="list_fragment_title">List of country</string>
+    <string name="description_image_of_country_flag">Image of country flag</string>
+    <string name="details_label">Details</string>
+    <string name="population_label">Population</string>
+    <string name="square_label">Square</string>
+    <string name="language_label">Language</string>
+    <string name="currency_label">Currency</string>
+    <string name="form_of_government_label">Form of government</string>
+    <string name="religion_label">Religion</string>
+    <string name="title_learning">Learning and Games</string>
+    <string name="country_memory_label">Learning</string>
+    <string name="start_memory_bt_label">Start</string>
+    <string name="next_button_label">Next</string>
+    <string name="appbar_summary_label">Summary</string>
+    <string name="no_errors_label">There are no errors!</string>
+    <string name="pre_errors_label">Countries you didn\'t call</string>
+    <string name="dialog_label">Stop learning?</string>
+    <string name="positive_dialog">Yes</string>
+    <string name="negative_dialog">No, return</string>
+    <string name="progress_label">Countries learned: %1s out of %2s</string>
+    <string name="high_score_pattern">High score: %1d</string>
+    <string name="games_label">Games</string>
+    <string name="currency_game_label">Currency</string>
+    <string name="world_part_label_game">World Part</string>
+    <string name="score_label">Score</string>
+    <string name="paused_label">Paused</string>
+    <string name="resume_bt_label">Resume</string>
+    <string name="leave_bt_label">Leave</string>
+    <string name="countries_learned_example">Countries learned: 0 of 205</string>
+    <string name="world_part">World Part</string>
+    <string name="coming_soon_label">Coming soon!</string>
+    <string name="not_available_label">Not available!</string>
+    <string name="least_label">Learn at least 30 countries.</string>
+</resources>

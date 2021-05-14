@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/countryListFragment"
+        android:title="@string/explore_bottom_label"
+        android:icon="@drawable/explore_bottom_ic">
+    </item>
+    <item
+        android:id="@+id/preLearningFragment"
+        android:title="@string/learning_bottom_label"
+        android:icon="@drawable/learning_bottom_ic">
+    </item>
+</menu>

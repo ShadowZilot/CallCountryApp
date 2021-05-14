@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="corner_size_item">16dp</dimen>
+    <dimen name="corner_size_header">16dp</dimen>
+    <dimen name="height_of_text_answer">45dp</dimen>
+    <dimen name="corner_size_test">4dp</dimen>
+</resources>

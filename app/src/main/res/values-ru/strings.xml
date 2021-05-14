@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Call Country</string>
+    <string name="explore_bottom_label">Обзор</string>
+    <string name="learning_bottom_label">Обучение</string>
+    <string name="search_action">поиск</string>
+    <array name="world_parts">
+        <item>Европа</item>
+        <item>Азия</item>
+        <item>Африка</item>
+        <item>Океания</item>
+        <item>Северная Америка</item>
+        <item>Южная Америка</item>
+    </array>
+    <array name="world_parts_game">
+        <item>ЮЖНАЯ А</item>
+        <item>ЕВРОПА</item>
+        <item>АЗИЯ</item>
+        <item>АФРИКА</item>
+        <item>ОКЕАНИЯ</item>
+        <item>СЕВЕРНАЯ А</item>
+    </array>
+    <string name="wiki_additional_info">За дополнительной информацией обращайтесь к</string>
+    <string name="wiki_web_pattern">https://ru.wikipedia.org/wiki/</string>
+    <string name="list_fragment_title">Список стран</string>
+    <string name="description_image_of_country_flag">Изображение флага страны</string>
+    <string name="details_label">Сведения</string>
+    <string name="population_label">Население</string>
+    <string name="square_label">Площадь</string>
+    <string name="language_label">Язык</string>
+    <string name="currency_label">Валюта</string>
+    <string name="form_of_government_label">Форма правления</string>
+    <string name="religion_label">Религия</string>
+    <string name="country_memory_label">Обучение</string>
+    <string name="start_memory_bt_label">Начать</string>
+    <string name="next_button_label">Дальше</string>
+    <string name="appbar_summary_label">Итоги</string>
+    <string name="no_errors_label">Ошибок нет!</string>
+    <string name="pre_errors_label">Страны которые вы не назвали</string>
+    <string name="dialog_label">Выйти</string>
+    <string name="title_learning">Обучение и игры</string>
+    <string name="positive_dialog">Да</string>
+    <string name="negative_dialog">Нет, вернуться</string>
+    <string name="progress_label">Стран выучено: %1s из %2s</string>
+    <string name="high_score_pattern">Рекорд: %1d</string>
+    <string name="games_label">Игры</string>
+    <string name="currency_game_label">Валюты</string>
+    <string name="world_part_label_game">Части Света</string>
+    <string name="score_label">Очки</string>
+    <string name="paused_label">Пауза</string>
+    <string name="resume_bt_label">Продолжить</string>
+    <string name="leave_bt_label">Выйти</string>
+    <string name="countries_learned_example">Стран выучено: 0 из 203</string>
+    <string name="world_part">Часть света</string>
+    <string name="coming_soon_label">Скоро будет!</string>
+    <string name="not_available_label">Недоступно!</string>
+    <string name="least_label">Выучите минимум 30 стран.</string>
+</resources>

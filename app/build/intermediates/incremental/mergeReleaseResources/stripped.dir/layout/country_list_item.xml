@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+        
+
+    
+                 
+                            
+                                                                 
+
+           
+
+    <com.shadowzilot.callcountry.views.MaskedCardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="@color/country_item_back"
+        app:cardElevation="8dp"
+        app:cardPreventCornerOverlap="false"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.CallCountry.Card" android:tag="layout/country_list_item_0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/country_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="binding_1"                     
+                android:minHeight="80dp"
+                android:minWidth="120dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/country_name"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/country_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:background="@drawable/item_header"
+                android:tag="binding_2"              
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Democratic People's Republic of Korea" />
+
+            <ImageView
+                android:id="@+id/capital_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="4dp"
+                android:src="@drawable/ic_capital_sign"
+                app:layout_constraintTop_toTopOf="@id/country_flag"
+                app:layout_constraintStart_toEndOf="@id/country_flag" />
+
+            <TextView
+                android:id="@+id/country_capital_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:tag="binding_3"                     
+                android:textAlignment="viewStart"
+                android:textSize="16sp"
+                android:textColor="@color/arrow_color"
+                app:layout_constraintStart_toEndOf="@id/capital_sign"
+                app:layout_constraintTop_toTopOf="@id/capital_sign"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/capital_sign"
+                tools:text="MoscowMoscowMoscowMoscowMoscow" />
+            <ImageView
+                android:id="@+id/earth_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginStart="4dp"
+                android:src="@drawable/ic_earth_sign"
+                app:layout_constraintStart_toEndOf="@id/country_flag"
+                app:layout_constraintTop_toBottomOf="@id/country_capital_name"/>
+
+            <TextView
+                android:id="@+id/world_part_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:tag="binding_4"                             
+                                                          
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                app:layout_constraintStart_toEndOf="@id/earth_sign"
+                app:layout_constraintTop_toTopOf="@id/earth_sign"
+                tools:text="Europa"
+                tools:textColor="@color/black"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.shadowzilot.callcountry.views.MaskedCardView>
+         

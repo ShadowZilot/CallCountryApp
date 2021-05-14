@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MarkView">
+        <attr name="mv_max" format="integer"/>
+        <attr name="mv_mark" format="float"/>
+        <attr name="mv_stroke_width" format="dimension"/>
+        <attr name="mv_text_size" format="dimension"/>
+        <attr name="mv_text_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="LearningProgress">
+        <attr name="lp_back_line_color" format="color"/>
+        <attr name="lp_line_color" format="color"/>
+        <attr name="lp_progress" format="float"/>
+        <attr name="lp_max" format="float"/>
+        <attr name="lp_corner_size" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="WorldPartButton">
+        <attr name="wb_text_size" format="dimension"/>
+        <attr name="wb_button_colors" format="reference"/>
+        <attr name="wb_text_color" format="color"/>
+        <attr name="wb_stroke_width" format="dimension"/>
+        <attr name="wb_text_array" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="TimerView">
+        <attr name="tv_textSize" format="dimension"/>
+        <attr name="tv_ringWidth" format="dimension"/>
+        <attr name="tv_strokeWidth" format="dimension"/>
+        <attr name="tv_ringColor" format="color"/>
+        <attr name="tv_strokeColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="WPGScoreTable">
+        <attr name="st_highScore" format="integer"/>
+        <attr name="st_Score" format="float"/>
+        <attr name="st_highLineColor" format="color"/>
+        <attr name="st_scrLineColor" format="color" />
+        <attr name="st_zrLineColor" format="color"/>
+        <attr name="st_scrTextSize" format="dimension"/>
+        <attr name="st_lineWidth" format="dimension"/>
+        <attr name="st_lineToLineLength" format="dimension"/>
+    </declare-styleable>
+</resources>

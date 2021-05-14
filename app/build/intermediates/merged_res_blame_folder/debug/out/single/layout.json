@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\KotlinProjects\\CallCountry\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\country_list_item.xml",
+        "source": "D:\\KotlinProjects\\CallCountry\\app\\src\\main\\res\\layout\\country_list_item.xml"
+    },
+    {
+        "merged": "D:\\KotlinProjects\\CallCountry\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_country_list.xml",
+        "source": "D:\\KotlinProjects\\CallCountry\\app\\src\\main\\res\\layout\\fragment_country_list.xml"
+    }
+]

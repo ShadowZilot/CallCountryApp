@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.CallCountry.Button" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/answer_bt_text_color</item>
+    </style>
+</resources>

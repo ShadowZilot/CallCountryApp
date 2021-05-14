@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.CallCountry" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/teal_700</item>
+        <item name="colorOnPrimary">@color/geinsboro</item>
+        <item name="colorPrimaryDark">@color/lamantin</item>
+        <item name="colorOnSurface">@color/call_country_black</item>
+        <item name="colorAccent">@color/teal_700</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorSecondary">@color/black_green</item>
+        <item name="android:colorBackground">@color/lavanda</item>
+    </style>
+    <style name="Theme.CallCountry" parent="Base.Theme.CallCountry"/>
+
+    <style name="Theme.CallCountry.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="TextAppearance.Sunflower.Toolbar.Text" parent="TextAppearance.MaterialComponents.Headline5" >
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+    
+    <style name="Theme.CallCountry.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.ActionBar">
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+</resources>

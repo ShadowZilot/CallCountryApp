@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layoutDescription="@xml/fragment_country_detail_scene">
+
+    <ImageView
+        android:id="@+id/detail_country_flag"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="80dp"
+        android:minWidth="120dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:src="@tools:sample/avatars"
+        android:contentDescription="@string/description_image_of_country_flag" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/country_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:gravity="center_horizontal"
+        android:textAppearance="@style/Base.Theme.CallCountry"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@id/detail_country_flag"
+        app:layout_constraintEnd_toEndOf="@id/detail_country_flag"
+        app:layout_constraintStart_toStartOf="@id/detail_country_flag"
+        tools:text="Lorum"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/capital_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:gravity="center_horizontal"
+        android:textAppearance="@style/Base.Theme.CallCountry"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@id/country_name_label"
+        app:layout_constraintStart_toStartOf="@id/country_name_label"
+        app:layout_constraintEnd_toEndOf="@id/country_name_label"
+        tools:text="Ipus"/>
+
+    <ImageView
+        android:id="@+id/capital_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_capital_sign"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintEnd_toStartOf="@id/capital_name_label"
+        app:layout_constraintBottom_toBottomOf="@id/capital_name_label"
+        app:layout_constraintTop_toTopOf="@id/capital_name_label"/>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="capital_name_label, detail_country_flag"/>
+
+    <include
+        android:id="@+id/detail_block"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@id/barrier"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        layout="@layout/country_detail_info_block"/>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

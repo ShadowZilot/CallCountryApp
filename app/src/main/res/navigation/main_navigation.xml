@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/countryListFragment">
+
+    <fragment
+        android:id="@+id/countryListFragment"
+        android:name="com.shadowzilot.callcountry.ui.CountryListFragment"
+        android:label="CountryListFragment"
+        tools:layout="@layout/fragment_country_list">
+        <action
+            android:id="@+id/action_countryListFragment_to_countryDetailFragment"
+            app:destination="@id/countryDetailFragment" />
+        <action
+            android:id="@+id/action_countryListFragment_to_preLearningFragment"
+            app:destination="@id/preLearningFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/preLearningFragment"
+        android:name="com.shadowzilot.callcountry.ui.PreLearningFragment"
+        android:label="PreLearningFragment" >
+        <action
+            android:id="@+id/action_preLearningFragment_to_learningActivity"
+            app:destination="@id/learningActivity"
+            app:launchSingleTop="false"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/countryDetailFragment"
+        android:name="com.shadowzilot.callcountry.ui.CountryDetailFragment"
+        android:label="CountryDetailFragment"
+        tools:layout="@layout/fragment_country_detail"/>
+    <activity
+        android:id="@+id/learningActivity"
+        android:name="com.shadowzilot.callcountry.ui.LearningActivity"
+        android:label="LearningActivity" />
+    <fragment
+        android:id="@+id/learningSummaryFragment"
+        android:name="com.shadowzilot.callcountry.ui.LearningSummaryFragment"
+        android:label="LearningSummaryFragment" >
+        <argument
+            android:name="myArg"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_learningSummaryFragment_to_countryListFragment"
+            app:destination="@id/countryListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/learningFragment"
+        android:name="com.shadowzilot.callcountry.ui.TestFragment"
+        android:label="LearningFragment"
+        tools:layout="@layout/fragment_test">
+        <action
+            android:id="@+id/action_learningFragment_to_learningSummaryFragment"
+            app:destination="@id/learningSummaryFragment">
+            <argument
+                android:name="amountOfErrors"
+                app:argType="integer"
+                android:defaultValue="0" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/textAnswerFragment"
+        android:name="com.shadowzilot.callcountry.ui.TextAnswerFragment"
+        android:label="TextAnswerFragment" >
+        <action
+            android:id="@+id/action_textAnswerFragment_to_countryDetailFragment"
+            app:destination="@id/countryDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/flagAnswersFragment"
+        android:name="com.shadowzilot.callcountry.ui.FlagAnswersFragment"
+        android:label="FlagAnswersFragment" >
+        <action
+            android:id="@+id/action_flagAnswersFragment_to_countryDetailFragment"
+            app:destination="@id/countryDetailFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="geinsboro">#DCDCDC</color>
+    <color name="lamantin">#979AAA</color>
+    <color name="black_green">#393b44</color>
+    <color name="lavanda">#ebecf1</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="country_item_back">#F8F4FF</color>
+    <color name="country_name_back_color">#F8F4FF</color>
+    <color name="country_name_back_color2">#DCDCDC</color>
+    <color name="call_country_black">#de000000</color>
+    <color name="high_score_label_color">#FF8E0D</color>
+    <color name="world_part_back_test_color">@color/white</color>
+    <color name="arrow_color">@color/black</color>
+    <color name="back_progress_color">#CCCCCC</color>
+    <color name="answer_bt_text_color">@color/black_green</color>
+
+    <color name="correct_answer_background">#78f25f</color>
+    <color name="wrong_answer_background">#E52B50</color>
+    <color name="test_back_color">#F0F8FF</color>
+    <color name="info_text_color">#293133</color>
+
+    <array name="world_parts_colors">
+        <item name="europe_color">#42AAFF</item>
+        <item name="asia_color">#FF8E0D</item>
+        <item name="africa_color">#181513</item>
+        <item name="oceania_color">#008000</item>
+        <item name="north_america_color">#9400D3</item>
+        <item name="south_america_color">#FF0033</item>
+    </array>
+
+</resources>
