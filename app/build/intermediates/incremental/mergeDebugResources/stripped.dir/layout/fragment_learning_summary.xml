@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/summary_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/geinsboro"
+        app:navigationIcon="@drawable/ic_back_arrow"
+        app:title="@string/appbar_summary_label" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/summary_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="16dp"
+            android:elevation="16dp"
+            android:background="@drawable/detail_header"
+            android:orientation="vertical"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pre_errors_label"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/detail_divider" />
+
+            <ImageView
+                android:id="@+id/no_errors_image"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_no_errors"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/no_errors_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/no_errors_label"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list_of_wrongs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                tools:listitem="@layout/country_list_item"
+                tools:visibility="visible" />
+        </LinearLayout>
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/collapse_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lavanda">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:contentScrim="@color/geinsboro"
+                app:expandedTitleMarginEnd="64dp"
+                app:expandedTitleMarginStart="48dp"
+                app:layout_scrollFlags="snap|scroll">
+
+                <com.shadowzilot.callcountry.views.MarkView
+                    android:id="@+id/summary_mark"
+                    android:layout_width="230dp"
+                    android:layout_height="230dp"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="16dp"
+                    app:mv_text_color="@color/answer_bt_text_color"
+                    app:layout_anchorGravity="top"
+                    app:layout_collapseMode="parallax"
+                    app:mv_stroke_width="20dp"
+                    app:mv_text_size="55sp"
+                    tools:mv_max="100"
+                    tools:mv_mark="95"/>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

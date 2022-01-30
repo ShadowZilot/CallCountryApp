@@ -6,79 +6,79 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->D:\KotlinProjects\CallCountry\app\src\main\AndroidManifest.xml
+8-->/Users/egorponomarev/StudioProjects/CallCountry/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="30" />
-9-->D:\KotlinProjects\CallCountry\app\src\main\AndroidManifest.xml
+9-->/Users/egorponomarev/StudioProjects/CallCountry/app/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.VIBRATE" />
-11-->D:\KotlinProjects\CallCountry\app\src\main\AndroidManifest.xml:5:5-66
-11-->D:\KotlinProjects\CallCountry\app\src\main\AndroidManifest.xml:5:22-63
+11-->/Users/egorponomarev/StudioProjects/CallCountry/app/src/main/AndroidManifest.xml:5:5-66
+11-->/Users/egorponomarev/StudioProjects/CallCountry/app/src/main/AndroidManifest.xml:5:22-63
 12
 13    <application
-13-->D:\KotlinProjects\CallCountry\app\src\main\AndroidManifest.xml:7:5-39:19
+13-->/Users/egorponomarev/StudioProjects/CallCountry/app/src/main/AndroidManifest.xml:7:5-39:19
 14        android:allowBackup="true"
-14-->D:\KotlinProjects\CallCountry\app\src\main\AndroidManifest.xml:8:9-35
+14-->/Users/egorponomarev/StudioProjects/CallCountry/app/src/main/AndroidManifest.xml:8:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-15-->[androidx.core:core:1.3.2] C:\Users\админ\.gradle\caches\transforms-2\files-2.1\45c338fce07546f5ce8fce6eac0d384d\core-1.3.2\AndroidManifest.xml:24:18-86
+15-->[androidx.core:core:1.3.2] /Users/egorponomarev/.gradle/caches/transforms-2/files-2.1/45c338fce07546f5ce8fce6eac0d384d/core-1.3.2/AndroidManifest.xml:24:18-86
 16        android:debuggable="true"
 17        android:icon="@mipmap/logo"
-17-->D:\KotlinProjects\CallCountry\app\src\main\AndroidManifest.xml:9:9-36
+17-->/Users/egorponomarev/StudioProjects/CallCountry/app/src/main/AndroidManifest.xml:9:9-36
 18        android:label="@string/app_name"
-18-->D:\KotlinProjects\CallCountry\app\src\main\AndroidManifest.xml:10:9-41
+18-->/Users/egorponomarev/StudioProjects/CallCountry/app/src/main/AndroidManifest.xml:10:9-41
 19        android:roundIcon="@mipmap/logo"
-19-->D:\KotlinProjects\CallCountry\app\src\main\AndroidManifest.xml:11:9-41
+19-->/Users/egorponomarev/StudioProjects/CallCountry/app/src/main/AndroidManifest.xml:11:9-41
 20        android:supportsRtl="true"
-20-->D:\KotlinProjects\CallCountry\app\src\main\AndroidManifest.xml:12:9-35
+20-->/Users/egorponomarev/StudioProjects/CallCountry/app/src/main/AndroidManifest.xml:12:9-35
 21        android:testOnly="true"
 22        android:theme="@style/Theme.CallCountry" >
-22-->D:\KotlinProjects\CallCountry\app\src\main\AndroidManifest.xml:13:9-49
+22-->/Users/egorponomarev/StudioProjects/CallCountry/app/src/main/AndroidManifest.xml:13:9-49
 23        <activity
-23-->D:\KotlinProjects\CallCountry\app\src\main\AndroidManifest.xml:14:9-16:51
+23-->/Users/egorponomarev/StudioProjects/CallCountry/app/src/main/AndroidManifest.xml:14:9-16:51
 24            android:name="com.shadowzilot.callcountry.ui.ExamDetailActivity"
-24-->D:\KotlinProjects\CallCountry\app\src\main\AndroidManifest.xml:15:13-50
+24-->/Users/egorponomarev/StudioProjects/CallCountry/app/src/main/AndroidManifest.xml:15:13-50
 25            android:screenOrientation="portrait" />
-25-->D:\KotlinProjects\CallCountry\app\src\main\AndroidManifest.xml:16:13-49
+25-->/Users/egorponomarev/StudioProjects/CallCountry/app/src/main/AndroidManifest.xml:16:13-49
 26        <activity
-26-->D:\KotlinProjects\CallCountry\app\src\main\AndroidManifest.xml:17:9-27:20
+26-->/Users/egorponomarev/StudioProjects/CallCountry/app/src/main/AndroidManifest.xml:17:9-27:20
 27            android:name="com.shadowzilot.callcountry.ui.MainActivity"
-27-->D:\KotlinProjects\CallCountry\app\src\main\AndroidManifest.xml:18:13-44
+27-->/Users/egorponomarev/StudioProjects/CallCountry/app/src/main/AndroidManifest.xml:18:13-44
 28            android:screenOrientation="portrait"
-28-->D:\KotlinProjects\CallCountry\app\src\main\AndroidManifest.xml:19:13-49
+28-->/Users/egorponomarev/StudioProjects/CallCountry/app/src/main/AndroidManifest.xml:19:13-49
 29            android:theme="@style/Theme.CallCountry.NoActionBar"
-29-->D:\KotlinProjects\CallCountry\app\src\main\AndroidManifest.xml:20:13-65
+29-->/Users/egorponomarev/StudioProjects/CallCountry/app/src/main/AndroidManifest.xml:20:13-65
 30            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" >
-30-->D:\KotlinProjects\CallCountry\app\src\main\AndroidManifest.xml:21:13-70
+30-->/Users/egorponomarev/StudioProjects/CallCountry/app/src/main/AndroidManifest.xml:21:13-70
 31            <intent-filter>
-31-->D:\KotlinProjects\CallCountry\app\src\main\AndroidManifest.xml:22:13-26:29
+31-->/Users/egorponomarev/StudioProjects/CallCountry/app/src/main/AndroidManifest.xml:22:13-26:29
 32                <action android:name="android.intent.action.MAIN" />
-32-->D:\KotlinProjects\CallCountry\app\src\main\AndroidManifest.xml:23:17-69
-32-->D:\KotlinProjects\CallCountry\app\src\main\AndroidManifest.xml:23:25-66
+32-->/Users/egorponomarev/StudioProjects/CallCountry/app/src/main/AndroidManifest.xml:23:17-69
+32-->/Users/egorponomarev/StudioProjects/CallCountry/app/src/main/AndroidManifest.xml:23:25-66
 33
 34                <category android:name="android.intent.category.LAUNCHER" />
-34-->D:\KotlinProjects\CallCountry\app\src\main\AndroidManifest.xml:25:17-77
-34-->D:\KotlinProjects\CallCountry\app\src\main\AndroidManifest.xml:25:27-74
+34-->/Users/egorponomarev/StudioProjects/CallCountry/app/src/main/AndroidManifest.xml:25:17-77
+34-->/Users/egorponomarev/StudioProjects/CallCountry/app/src/main/AndroidManifest.xml:25:27-74
 35            </intent-filter>
 36        </activity>
 37        <activity
-37-->D:\KotlinProjects\CallCountry\app\src\main\AndroidManifest.xml:28:9-32:73
+37-->/Users/egorponomarev/StudioProjects/CallCountry/app/src/main/AndroidManifest.xml:28:9-32:73
 38            android:name="com.shadowzilot.callcountry.ui.LearningActivity"
-38-->D:\KotlinProjects\CallCountry\app\src\main\AndroidManifest.xml:29:13-48
+38-->/Users/egorponomarev/StudioProjects/CallCountry/app/src/main/AndroidManifest.xml:29:13-48
 39            android:screenOrientation="portrait"
-39-->D:\KotlinProjects\CallCountry\app\src\main\AndroidManifest.xml:30:13-49
+39-->/Users/egorponomarev/StudioProjects/CallCountry/app/src/main/AndroidManifest.xml:30:13-49
 40            android:theme="@style/Theme.CallCountry.NoActionBar"
-40-->D:\KotlinProjects\CallCountry\app\src\main\AndroidManifest.xml:31:13-65
+40-->/Users/egorponomarev/StudioProjects/CallCountry/app/src/main/AndroidManifest.xml:31:13-65
 41            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
-41-->D:\KotlinProjects\CallCountry\app\src\main\AndroidManifest.xml:32:13-70
+41-->/Users/egorponomarev/StudioProjects/CallCountry/app/src/main/AndroidManifest.xml:32:13-70
 42        <activity
-42-->D:\KotlinProjects\CallCountry\app\src\main\AndroidManifest.xml:34:9-38:73
+42-->/Users/egorponomarev/StudioProjects/CallCountry/app/src/main/AndroidManifest.xml:34:9-38:73
 43            android:name="com.shadowzilot.callcountry.ui.WorldPartGameActivity"
-43-->D:\KotlinProjects\CallCountry\app\src\main\AndroidManifest.xml:35:13-53
+43-->/Users/egorponomarev/StudioProjects/CallCountry/app/src/main/AndroidManifest.xml:35:13-53
 44            android:screenOrientation="portrait"
-44-->D:\KotlinProjects\CallCountry\app\src\main\AndroidManifest.xml:36:13-49
+44-->/Users/egorponomarev/StudioProjects/CallCountry/app/src/main/AndroidManifest.xml:36:13-49
 45            android:theme="@style/Theme.CallCountry.NoActionBar"
-45-->D:\KotlinProjects\CallCountry\app\src\main\AndroidManifest.xml:37:13-65
+45-->/Users/egorponomarev/StudioProjects/CallCountry/app/src/main/AndroidManifest.xml:37:13-65
 46            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
-46-->D:\KotlinProjects\CallCountry\app\src\main\AndroidManifest.xml:38:13-70
+46-->/Users/egorponomarev/StudioProjects/CallCountry/app/src/main/AndroidManifest.xml:38:13-70
 47    </application>
 48
 49</manifest>

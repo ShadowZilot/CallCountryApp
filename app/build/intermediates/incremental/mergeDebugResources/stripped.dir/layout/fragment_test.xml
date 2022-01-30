@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/test_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/word_part_test_container"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/geinsboro"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/world_part_test_background">
+            <TextView
+                android:id="@+id/word_part_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="North America" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/test_divider"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/word_part_test_container"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/info_test_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/test_header"
+        android:paddingBottom="4dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/test_divider">
+
+        <ImageView
+            android:id="@+id/learning_flag"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/description_image_of_country_flag"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/country_name_learning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/answer_bt_text_color"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="@id/learning_flag"
+            app:layout_constraintStart_toStartOf="@id/learning_flag"
+            app:layout_constraintTop_toBottomOf="@id/learning_flag"
+            tools:text="Democratic Republic of Congo" />
+
+        <ImageView
+            android:id="@+id/capital_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:src="@drawable/ic_capital_sign"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintBottom_toBottomOf="@id/country_capital_learning"
+            app:layout_constraintEnd_toStartOf="@id/country_capital_learning"
+            app:layout_constraintTop_toTopOf="@id/country_capital_learning" />
+
+        <TextView
+            android:id="@+id/country_capital_learning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="12dp"
+            android:textAlignment="center"
+            android:textColor="@color/answer_bt_text_color"
+            app:layout_constraintTop_toBottomOf="@id/country_name_learning"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/country_name_learning"
+            app:layout_constraintEnd_toEndOf="@id/country_name_learning"
+            tools:text="Bandar-Seri-BegavanBandar-Ser"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/learning_next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/next_background"
+        android:visibility="gone"
+        android:src="@drawable/ic_next_learning"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/answer_host"
+        tools:visibility="visible"/>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/answer_host"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout="@layout/flag_answers_field" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
